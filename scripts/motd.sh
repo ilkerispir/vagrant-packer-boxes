@@ -21,7 +21,6 @@ cat <<'EOF'
 $motd
 EOF
 motd
-
     chmod 0755 "$MOTD_CONFIG"
 else
     echo "$motd" >> /etc/motd

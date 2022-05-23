@@ -21,6 +21,3 @@ chmod 600 $HOME_DIR/.ssh/authorized_keys;
 
 echo "Get authorized_keys...";
 cat $HOME_DIR/.ssh/authorized_keys;
-
-
-

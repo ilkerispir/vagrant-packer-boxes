@@ -46,9 +46,6 @@ if [ $constSTARTADDRESS != $STARTADDRESS ] || [ $constENDADDRESS != $ENDADDRESS 
     isShutDown=true
 fi
 
-#####################
-
-
 ### Host-Only Config ###
 
 constSTARTADDRESS="172.16.10.1"
@@ -60,7 +57,6 @@ JSON="$(prlsrvctl net info Host-Only -j)"
 STARTADDRESS="$(echo $JSON|jq -r '."DHCPv4 server"."IP scope start address"')"
 ENDADDRESS="$(echo $JSON|jq -r '."DHCPv4 server"."IP scope end address"')"
 SUBNETADDRESS="$(echo $JSON|jq -r '."Parallels adapter"."IPv4 subnet mask"')"
-
 
 if [ $constSTARTADDRESS != $STARTADDRESS ] || [ $constENDADDRESS != $ENDADDRESS ] || [ $constSUBNETADDRESS != $SUBNETADDRESS ]; then
 

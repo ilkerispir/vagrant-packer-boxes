@@ -11,3 +11,12 @@ autoinstall:
     - systemctl stop ssh
   ssh:
     install-server: true
+  packages:
+    - curl
+    - wget
+    - tar
+    - bzip2
+    - net-tools
+    - git
+    - vim
+    - linux-image-generic

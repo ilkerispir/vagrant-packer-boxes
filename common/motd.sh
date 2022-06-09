@@ -12,7 +12,7 @@ This system is built by the Ilker Ispir
 More information can be found at https://github.com/ilkerispir"
 
 if [ -d /etc/update-motd.d ]; then
-    MOTD_CONFIG='/etc/update-motd.d/99-turknetdevops'
+    MOTD_CONFIG='/etc/update-motd.d/99-ilkerispir'
 
     cat >> "$MOTD_CONFIG" <<motd
 #!/bin/sh

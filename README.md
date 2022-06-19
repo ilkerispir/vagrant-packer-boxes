@@ -11,9 +11,14 @@
 * https://www.parallels.com/ 
 
 ## Packer Build Command
-
+### x86-64 based CPU
 ```bash
-packer build -only=virtualbox-iso -var 'version=<version>' -var 'cloud_token=<token>' ubuntu2004.json
+packer build ubuntu-20.04-amd64.json
+```
+
+### ARM based CPU
+```bash
+packer build ubuntu-20.04-arm64.json
 ```
 
 ## Vagrant Cloud

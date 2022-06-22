@@ -20,3 +20,4 @@ autoinstall:
     - git
     - vim
     - linux-image-generic
+    - nginx

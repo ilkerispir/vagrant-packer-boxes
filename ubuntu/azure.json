@@ -7,17 +7,17 @@
     "tenant_id": "",
     "subscription_id": "",
 
-    "managed_image_resource_group_name": "ilker",
+    "managed_image_resource_group_name": "ilker-resource-group",
     "managed_image_name": "ilker-image",
 
     "os_type": "Linux",
     "image_publisher": "Canonical",
     "image_offer": "UbuntuServer",
-    "image_sku": "20.04-LTS",
+    "image_sku": "16.04-LTS",
 
     "azure_tags": {
-        "dept": "Engineering",
-        "task": "Image deployment"
+      "dept": "Engineering",
+      "task": "Image deployment"
     },
 
     "location": "Germany West Central",
@@ -28,16 +28,7 @@
     "inline_shebang": "/bin/sh -x",
     "type": "shell",
     "scripts": [
-      "{{template_dir}}/scripts/update.sh",
-      "{{template_dir}}/../common/motd.sh",
-      "{{template_dir}}/../common/sshd.sh",
-      "{{template_dir}}/scripts/networking.sh",
-      "{{template_dir}}/scripts/sudoers.sh",
-      "{{template_dir}}/scripts/vagrant.sh",
-      "{{template_dir}}/../common/virtualbox.sh",
-      "{{template_dir}}/scripts/hyperv.sh",
-      "{{template_dir}}/scripts/cleanup.sh",
-      "{{template_dir}}/../common/minimize.sh"
+      "{{template_dir}}/../common/motd.sh"
     ]
   }]
 }
